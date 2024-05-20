@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/bgimgo"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/input_bg"
+tools:context=".activities.ReportInsertActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/btnDel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:onClick="deleteReport"
+        android:text="Delete"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnPin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreeCheckBox"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jobFill" />
+
+    <TextView
+        android:id="@+id/JobPost"
+        android:layout_width="193dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:text="Report Posting..."
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="95dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/JobPost"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cleancircle_logo" />
+
+    <TextView
+        android:id="@+id/jobFill"
+        android:layout_width="185dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Fill the bellow form"
+        android:textColor="#FFC107"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/JobPost" />
+
+    <EditText
+        android:id="@+id/editEstimate"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:hint="@string/estimate"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+    <Spinner
+        android:id="@+id/editType"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:entries="@array/waste_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editEstimate" />
+
+    <DatePicker
+        android:id="@+id/editDate"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editType" />
+
+    <Button
+        android:id="@+id/btnPin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="insert_Location"
+        android:text="@string/btnPin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDel" />
+
+    <Button
+        android:id="@+id/btnUPin"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="55dp"
+        android:onClick="updateLocation"
+        android:text="@string/btnPin"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/btnList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDel"
+        app:layout_constraintTop_toBottomOf="@+id/agreeCheckBox"
+        tools:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editRemarks"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:hint="@string/Remarks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDate" />
+
+    <CheckBox
+        android:id="@+id/agreeCheckBox"
+        android:layout_width="347dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/comAgreement"
+        app:layout_constraintBottom_toTopOf="@+id/btnPin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInsert" />
+
+    <ImageView
+        android:id="@+id/imageViewInsert"
+        android:layout_width="140dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editRemarks"
+        app:srcCompat="@drawable/cleancircle_logo" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="95dp"
+        android:text="@string/btnInsert"
+        android:onClick="insert_proof"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInsert"
+        app:layout_constraintTop_toBottomOf="@+id/editRemarks" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="showList"
+        android:text="Reports"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnPin"
+        app:layout_constraintTop_toBottomOf="@+id/btnUPin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

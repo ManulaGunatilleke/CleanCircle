@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">CleanCircle</string>
+
+    <!--index page-->
+    <string name="login_index">SIGN UP</string>
+    <string name="create_btn_index">LOGIN</string>
+
+    <!--signup page-->
+    <string name="signup_id">Sign up</string>
+    <string name="userName">Full name</string>
+    <string name="userEmail">Email</string>
+    <string name="userNIC">NIC</string>
+    <string name="userADD">Address</string>
+    <string name="userTELE">Telephone Number</string>
+    <string name="userUSERNAME">Username</string>
+    <string name="userPASS">Password</string>
+    <string name="userRETYPASS">Re Enter Password</string>
+    <string name="check_box">I agree to terms and conditions</string>
+    <string name="btn_submit_C">SUBMIT</string>
+    <string name="login_C">LOGIN</string>
+
+    <string name="PaymentHeading">Payment Portal</string>
+    <string name="PayCCno">Credit Card No</string>
+    <string name="PayCCname">Card Holder Name</string>
+    <string name="PayExpDate">Exp.Date</string>
+    <string name="PayCvv">CVV</string>
+    <string name="PayBtn">PAY</string>
+
+    <string name="LoginType">User Type:</string>
+    <string name="LoginTxt">Login</string>
+    <string-array name="user_type">
+        <item>Select User Type</item>
+        <item>Citizen</item>
+        <item>Wastage Worker</item>
+    </string-array>
+    <string name="LoginEmail">Email</string>
+    <string name="LoginBtn">LOGIN</string>
+    <string name="LoginWBtn">LOGIN AS WASTAGE WORKER</string>
+
+    <string name="CitizenHomeText">“For a better tomorrow with green”</string>
+    <string name="CitizenInfo">Info</string>
+    <string name="CitizenRecycle">Recycle</string>
+    <string name="CitizenReport">Report</string>
+    <string name="CitizenSchedule">Schedule Pickup</string>
+    <string name="CitizenBtnActive">Active Request</string>
+    <string name="CitizenBtnProfile">Profile</string>
+
+    <string name="WorkerSentence">You can select your garbage \ntype here.</string>
+    <string name="btnWorkerHome">Show Map</string>
+    <string-array name="waste_type">
+        <item>Select Waste Type</item>
+        <item>Polythene</item>
+        <item>Food Wastage</item>
+        <item>Plastic</item>
+        <item>E-Waste</item>
+    </string-array>
+
+
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="btnReportPost">ReportInsert</string>
+    <string name="btnReportData">ReportFetch</string>
+
+    <!--signup page-->
+    <string name="estimate">Estimate Weight</string>
+    <string name="comAgreement">I agree to terms and conditions</string>
+    <string name="Remarks">Remarks</string>
+    <string name="btnInsert">Insert a proof</string>
+    <string name="btnPin">Pin Location</string>
+
+    <!--dashboard page-->
+    <string name="DashboardTxt1">Citizen</string>
+    <string name="DashboardTxt2">Home</string>
+
+    <!--schedule pickup page-->
+    <string name="schedulepickupheading">Schedule Pickup</string>
+    <string name="scheduleWeight">Estimated Weight</string>
+    <string name="scheduleRemark">Remarks</string>
+    <string name="scheduleBtnPin">Pin Location</string>
+    <string-array name="weight_type">
+        <item>Select Weight Range</item>
+        <item></item>
+        <item>Food Wastage</item>
+        <item>Plastic</item>
+        <item>E-Waste</item>
+    </string-array>
+
+    <!--recycle page-->
+    <string name="recycleHeader">Recycle Waste</string>
+    <string name="recycleText">“Recycle your waste and make your environment the best!”</string>
+    <string name="recycleMethodsHeader">Recycling Methods</string>
+    <string name="recycleComposting">Composting</string>
+    <string name="recycleCompostText">To create compost, mix green materials such as kitchen scraps and grass clippings with brown materials like dry leaves and shredded paper in a compost bin. Maintain moisture by watering the pile occasionally, and turn it regularly to facilitate decomposition. This results in nutrient-rich compost, perfect for enriching garden soil and promoting plant growth naturally.</string>
+    <string name="recycleReuse">Reuse</string>
+    <string name="recycleReuseText">One effective way to recycle by reusing is to repurpose items for alternative functions, such as using glass jars as storage containers or turning old fabric into cleaning rags. By creatively transforming materials, we can reduce waste and contribute to a more sustainable environment.</string>
+    <string name="recycleEco">Use Eco-Friendly Products</string>
+    <string name="recycleEcoText">Recycling with eco-friendly products involves opting for biodegradable and recyclable items, such as compostable packaging and reusable shopping bags made from sustainable materials. By consciously choosing environmentally conscious alternatives, we can minimize the environmental impact of our consumption habits and promote a greener, more sustainable future.</string>
+
+    <!--compost page-->
+    <string name="compostTitle">Compost Tracker</string>
+    <string name="compostText">Input the estimated amount of waste you have in kilograms to generate the duration.</string>
+    <string name="compostText2">For more info about compost generation click below!</string>
+
+
+    <!--active request page-->
+    <string name="activeTitle">Active Pickup Request</string>
+    <string name="activeName">E-mail</string>
+    <string name="activeDate">Date</string>
+    <string name="activeWasteType">Waste Type</string>
+    <string name="activeRemark">Remarks</string>
+    <string name="activeBtn">Confirm Pickup</string>
+
+    <!--update account page-->
+    <string name="upd_Acc">Update Account</string>
+    <string name="upd_button">Update</string>
+
+    <!--InfoHub-->
+    <string name="infoPara">CleanCircle is an organization that works hard everyday to keep our environment clean. Our main objective is to connect citizens and waste workers well so the waste collection process is efficient. This application is proof for that.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="ReportHeading">Make a Report</string>
+
+</resources>
